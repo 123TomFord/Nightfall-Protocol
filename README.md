@@ -6,6 +6,8 @@ A web-based top-down 2D zombie shooter where you command a special operations fi
 
 **[Play on GitHub Pages](https://123TomFord.github.io/Nightfall-Protocol/)**
 
+> **Note**: To enable GitHub Pages for this repository, follow the [Setup Instructions](#-github-pages-setup) below.
+
 ## 🎯 Mission Objective
 
 **Secure the Area**: Eliminate all zombies and rescue civilians before they get infected or your team is overrun.
@@ -60,6 +62,32 @@ Each soldier:
 
 **Win**: Eliminate all zombies and rescue all remaining civilians
 **Lose**: All soldiers are killed
+
+## 🚀 GitHub Pages Setup
+
+To enable GitHub Pages and make the game available online:
+
+1. **Go to Repository Settings**
+   - Click on "Settings" tab in your GitHub repository
+   
+2. **Navigate to Pages Section**
+   - Scroll down to "Pages" in the left sidebar
+   
+3. **Configure Source**
+   - Under "Source", select "GitHub Actions"
+   - This will use the automated workflow for deployment
+   
+4. **Deploy**
+   - Once configured, push any changes to the `main` branch
+   - The workflow will automatically build and deploy the game
+   - Your game will be available at: `https://123TomFord.github.io/Nightfall-Protocol/`
+
+### 🔧 Automatic Deployment
+
+This repository includes a GitHub Actions workflow that:
+- ✅ Automatically deploys to GitHub Pages on every push to `main`
+- ✅ Builds and publishes the game files
+- ✅ Makes the game accessible via GitHub Pages URL
 
 ## 🛠️ Technical Details
 

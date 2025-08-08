@@ -1,10 +1,8 @@
-# Enable GitHub Pages
+# Deploy to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 permissions:
