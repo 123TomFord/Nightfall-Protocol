@@ -82,6 +82,8 @@ To enable GitHub Pages and make the game available online:
    - The workflow will automatically build and deploy the game
    - Your game will be available at: `https://123TomFord.github.io/Nightfall-Protocol/`
 
+> **Status**: The workflow is configured and ready. GitHub Pages needs to be enabled in repository settings to complete deployment.
+
 ### 🔧 Automatic Deployment
 
 This repository includes a GitHub Actions workflow that:
