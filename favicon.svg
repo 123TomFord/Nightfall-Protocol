@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Background -->
+  <rect width="16" height="16" fill="#1a1a2e"/>
+  
+  <!-- Soldier (green dot) -->
+  <circle cx="6" cy="6" r="2" fill="#00ff00"/>
+  
+  <!-- Zombie (brown dot) -->
+  <circle cx="12" cy="10" r="1.5" fill="#8B4513"/>
+  
+  <!-- Weapon/crosshair -->
+  <line x1="5" y1="6" x2="7" y2="6" stroke="#00ffff" stroke-width="0.5"/>
+  <line x1="6" y1="5" x2="6" y2="7" stroke="#00ffff" stroke-width="0.5"/>
+</svg>
