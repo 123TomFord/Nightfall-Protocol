@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightfall Protocol - Zombie Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <div id="hud">
+                <div id="mission-info">
+                    <h3>Mission: Secure the Area</h3>
+                    <p id="objective">Eliminate all zombies and rescue civilians</p>
+                </div>
+                <div id="team-status">
+                    <div class="team-member" id="soldier-1">
+                        <span>Alpha</span>
+                        <div class="health-bar"><div class="health-fill"></div></div>
+                        <div class="ammo-count">30/120</div>
+                    </div>
+                    <div class="team-member" id="soldier-2">
+                        <span>Bravo</span>
+                        <div class="health-bar"><div class="health-fill"></div></div>
+                        <div class="ammo-count">30/120</div>
+                    </div>
+                    <div class="team-member" id="soldier-3">
+                        <span>Charlie</span>
+                        <div class="health-bar"><div class="health-fill"></div></div>
+                        <div class="ammo-count">30/120</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="action-bar">
+                <button id="sprint-toggle" class="action-btn" title="Toggle Sprint (S)">
+                    <span class="icon">🏃</span>
+                    <span class="label">Sprint</span>
+                </button>
+                <button id="hold-position" class="action-btn" title="Hold Position (H)">
+                    <span class="icon">🛡️</span>
+                    <span class="label">Hold</span>
+                </button>
+                <button id="follow-mode" class="action-btn active" title="Follow Mode (F)">
+                    <span class="icon">👥</span>
+                    <span class="label">Follow</span>
+                </button>
+                <button id="overwatch" class="action-btn" title="Overwatch (O)">
+                    <span class="icon">🔍</span>
+                    <span class="label">Watch</span>
+                </button>
+            </div>
+        </div>
+        
+        <canvas id="game-canvas" width="1200" height="800"></canvas>
+        
+        <div id="controls-help">
+            <h4>Controls:</h4>
+            <p>Click to move team | S: Sprint | H: Hold | F: Follow | O: Overwatch</p>
+        </div>
+    </div>
+
+    <script src="js/vector2.js"></script>
+    <script src="js/entity.js"></script>
+    <script src="js/soldier.js"></script>
+    <script src="js/zombie.js"></script>
+    <script src="js/civilian.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
