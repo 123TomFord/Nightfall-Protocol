@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightfall Protocol - Zombie Survival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Nightfall Protocol</h1>
+            <div class="mission-info">
+                <span id="mission-objective">Mission: Evacuate all civilians to the extraction zone</span>
+                <div class="stats">
+                    <span id="civilians-rescued">Civilians Rescued: 0/5</span>
+                    <span id="zombies-eliminated">Zombies Eliminated: 0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="1200" height="800"></canvas>
+        </div>
+        
+        <div class="action-bar">
+            <div class="action-group">
+                <button id="sprint-toggle" class="action-btn" title="Toggle Sprint (S)">
+                    <span class="action-icon">🏃</span>
+                    <span class="action-label">Sprint</span>
+                </button>
+                <button id="hold-position" class="action-btn" title="Hold Position (H)">
+                    <span class="action-icon">🛡️</span>
+                    <span class="action-label">Hold</span>
+                </button>
+                <button id="follow-mode" class="action-btn active" title="Follow Mode (F)">
+                    <span class="action-icon">👥</span>
+                    <span class="action-label">Follow</span>
+                </button>
+                <button id="reload-all" class="action-btn" title="Reload All (R)">
+                    <span class="action-icon">🔄</span>
+                    <span class="action-label">Reload</span>
+                </button>
+            </div>
+            
+            <div class="team-status">
+                <div class="soldier-status" id="soldier-1">
+                    <div class="soldier-name">Alpha</div>
+                    <div class="health-bar">
+                        <div class="health-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="ammo-count">30/90</div>
+                </div>
+                <div class="soldier-status" id="soldier-2">
+                    <div class="soldier-name">Bravo</div>
+                    <div class="health-bar">
+                        <div class="health-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="ammo-count">30/90</div>
+                </div>
+                <div class="soldier-status" id="soldier-3">
+                    <div class="soldier-name">Charlie</div>
+                    <div class="health-bar">
+                        <div class="health-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="ammo-count">30/90</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls-help">
+            <div class="help-text">
+                <strong>Controls:</strong> 
+                Click to move team | S - Sprint | H - Hold Position | F - Follow Mode | R - Reload
+            </div>
+        </div>
+    </div>
+    
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="game-over-title">Mission Complete!</h2>
+            <p id="game-over-message">All civilians have been successfully evacuated.</p>
+            <button id="restart-btn" class="btn-primary">Restart Mission</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
